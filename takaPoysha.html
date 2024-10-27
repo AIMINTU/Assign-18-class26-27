@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-20">
+    <h1 class="text-center text-4xl">Play with taka poysha</h1>
+    <section class="grid grid-cols-3 gap-10 mt-20">
+        <div class="bg-yellow-600 h-[200px] rounded-lg">
+            <h2 class="text-center text-3xl text-white pt-10">Deposit</h2>
+            <p class="text-center text-white text-2xl mt-5" >$<span id="depositparagraph">00</span></p>
+
+        </div>
+        <div class="bg-blue-600 h-[200px] rounded-lg">
+            <h2 class="text-center text-3xl text-white pt-10">Total</h2>
+            <p class="text-center text-white text-2xl mt-5">$<span id="total-amount">1000</span></p>
+    
+        </div>
+        <div class="bg-purple-600 h-[200px] rounded-lg">
+            <h2 class="text-center text-3xl text-white pt-10">Withdraw</h2>
+            <p class="text-center text-white text-2xl mt-5">$<span id="withdrawpara">00</span></p>
+            
+        </div>
+    </section>
+    <section class="mt-20 flex gap-20">
+        <div>
+            <input class="h-[40px] w-[350px] border-2 border-red-700" type="text" name="" id="depositInput" placeholder="Enter the deposit amount">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="deposit">Deposit koro</button>
+        </div>
+        <div>
+            <input class="h-[40px] w-[350px] border-2 border-red-700" type="text" name="" id="withdrawInput" placeholder="Enter the deposit amount">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="withdraw1">Withdraw</button>
+        </div>
+    </section>
+    
+    <script src="./js/Takapoysha.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+</html>
